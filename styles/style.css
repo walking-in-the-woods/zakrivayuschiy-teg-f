@@ -290,3 +290,32 @@
     width: 1.3125rem;
     height: 1.3125rem;
 }
+
+/* MOBILE */
+@media (width <= 375px) {
+    .header {
+        margin-top: 100px;
+    }
+    .header__logo {
+        font-size: 3.0625rem;
+    }
+    .header__subtitle {
+        font-size: 0.875rem;
+    }
+    .cards {
+        inline-size: 100%;
+        padding: 0 0.5rem;
+    }
+    .card__title {
+        font-size: 1rem;
+        padding: 0.25rem 0.625rem;
+    }
+    .card__watermark {
+        top: 15px;
+        right: 15px;
+    }
+    .dialog {
+        max-inline-size: 90%;
+        padding: 30px 20px;
+    }
+}
