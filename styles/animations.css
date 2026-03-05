@@ -15,9 +15,14 @@
     transform-origin: center;
 }
 
-.like-icon .core {
-    fill: transparent;
-    transition: fill 0.3s linear 0.03s;
+.like-icon .heart {
+    transform-origin: center;
+}
+
+/* Переходы по умолчанию */
+.like-icon .contour {
+    fill: #000;
+    transition: fill 0.1s linear;
 }
 
 .like-icon .main-body {
@@ -25,55 +30,51 @@
     transition: fill 0.3s linear;
 }
 
-.like-icon .contour {
-    fill: var(--contour-color);
-    transition: fill 0.1s linear;
+.like-icon .core {
+    fill: transparent;
+    transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon .sparks {
-    fill: var(--accent-color);
+    fill: #f00;
     opacity: 0;
     transition: opacity 0.3s ease-in;
 }
 
-/* HOVER */
-.like-icon:hover .core {
-    fill: var(--accent-color);
-    transition-delay: 0s;
-}
-
+/* Состояние hover – чёрное заполнение, чёрный контур */
 .like-icon:hover .main-body {
-    fill: var(--accent-color);
+    fill: #000;
     transition-delay: 0.05s;
 }
+.like-icon:hover .core {
+    fill: #000;
+    transition-delay: 0s;
+}
+/* Контур остаётся чёрным */
 
-/* ACTIVE */
-.like-icon:active .core,
-.like-icon:active .main-body {
-    fill: var(--accent-color);
+/* Состояние active – красное заполнение, чёрный контур */
+.like-icon:active .main-body,
+.like-icon:active .core {
+    fill: #f00;
     transition-delay: 0s;
 }
 
-/* IS LIKED */
-.like-icon.is-liked .core {
-    fill: var(--accent-color);
-    transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .main-body {
-    fill: var(--accent-color);
-    transition: fill 0.3s linear 0.05s;
-}
-
+/* Состояние is-liked – всё красное, искры, масштабирование */
 .like-icon.is-liked .contour {
-    fill: var(--accent-color);
+    fill: #f00;
     transition: fill 0.3s linear 0.06s;
 }
-
+.like-icon.is-liked .main-body {
+    fill: #f00;
+    transition: fill 0.3s linear 0.05s;
+}
+.like-icon.is-liked .core {
+    fill: #f00;
+    transition: fill 0.3s linear;
+}
 .like-icon.is-liked .heart {
     animation: heart-scale 0.3s ease-in 0.1s 1;
 }
-
 .like-icon.is-liked .sparks {
     animation: sparks-appear 0.3s ease-in 0.3s 1;
 }
