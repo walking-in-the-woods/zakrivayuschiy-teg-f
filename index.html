@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
+
+    <!-- <div
+      class="pixelperfect"
+      aria-hidden="true"
+      alt="Pixelperfect debugging image"
+    ></div> -->
+
     <header class="header">
       <h1 class="header__logo">&lt;/HTML&gt;</h1>
       <p class="header__subtitle">закрывающий тег</p>
@@ -38,7 +45,7 @@
               alt="Подготовка к работе"
               loading="lazy"
             />
-            <span class="card__watermark">Страх</span>
+            <span class="card__watermark">Знакомство</span>
           </div>
           <!-- <div class="card__image-wrapper">
             <img
@@ -120,7 +127,7 @@
               alt="Чистый лист"
               loading="lazy"
             />
-            <span class="card__watermark">Пустота</span>
+            <span class="card__watermark">Неопределенность</span>
           </div>
           <!-- <div class="card__image-wrapper">
             <img
@@ -277,7 +284,7 @@
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           <div class="card__image-wrapper">
             <img
-              class="card__image filter-card-ideal"
+              class="card__image filter-card-perfectionism"
               srcset="
                 ./images/image-371x371.jpg 371w,
                 ./images/image-696x696.jpg 696w
@@ -287,7 +294,7 @@
               alt="Идеал"
               loading="lazy"
             />
-            <span class="card__watermark">Идеал</span>
+            <span class="card__watermark">Перфекционизм</span>
           </div>
           <!-- <div class="card__image-wrapper">
             <img
@@ -528,7 +535,7 @@
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           <div class="card__image-wrapper">
             <img
-              class="card__image filter-card-hands"
+              class="card__image filter-card-overcoming"
               srcset="
                 ./images/image-371x371.jpg 371w,
                 ./images/image-696x696.jpg 696w
@@ -538,7 +545,7 @@
               alt="Усталость"
               loading="lazy"
             />
-            <span class="card__watermark">Руки</span>
+            <span class="card__watermark">Преодоление</span>
           </div>
           <!-- <div class="card__image-wrapper">
             <img
@@ -612,7 +619,7 @@
           <h2 class="card__title">«Сейчас я здесь»</h2>
           <div class="card__image-wrapper">
             <img
-              class="card__image filter-card-now"
+              class="card__image filter-card-estimation"
               srcset="
                 ./images/image-371x371.jpg 371w,
                 ./images/image-696x696.jpg 696w
@@ -622,7 +629,7 @@
               alt="Сейчас"
               loading="lazy"
             />
-            <span class="card__watermark">Сейчас</span>
+            <span class="card__watermark">Оценка результата</span>
           </div>
           <!-- <div class="card__image-wrapper">
             <img
@@ -699,7 +706,7 @@
         <svg style="display: none">
           <symbol id="floppy" viewBox="0 0 39 39">
             <path
-              fill="#000"
+              fill="currentColor"
               d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0
               18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0
               36h3v3H0zM33 0v3h-3V0zM30 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM21 0v3h-3V0zM18
@@ -721,7 +728,7 @@
 
         <!-- A button to open the floppy modal window by a <use> tag. -->
         <button class="button button_dialog-open">
-          <svg class="floppy-icon" width="21" height="21" viewBox="0 0 39 39">
+          <svg class="floppy-icon" width="21" height="21" viewBox="0 0 39 36">
             <use href="#floppy"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
@@ -741,9 +748,7 @@
                   <use href="#floppy"></use>
                 </svg>
               </div>
-              <p class="dialog__text">
-                Вставьте дискету,<br />чтобы продолжить
-              </p>
+              <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
             </div>
             <button class="button dialog__close" type="submit">
               <span class="button__text">ОК</span>

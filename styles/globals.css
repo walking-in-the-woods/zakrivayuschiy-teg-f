@@ -2,6 +2,11 @@
 Здесь же лежит утилитарный класс visually-hidden на случай, если нужно скрыть какой-то элемент, но оставить доступным для скринридера.
 Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
 
+/* Debugging outline */
+/* * {
+  outline: 1px solid red;
+} */
+
 *,
 *::after,
 *::before {
@@ -44,10 +49,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
