@@ -12,81 +12,97 @@
 
 /* DEFAULT HEART */
 .like-icon {
-    transform-origin: center;
+  transform-origin: center;
 }
 
 .like-icon .heart {
-    transform-origin: center;
+  transform-origin: center;
 }
 
-/* Переходы по умолчанию */
+/* DEFAULT CONTOUR */
 .like-icon .contour {
-    fill: #000;
-    transition: fill 0.1s linear;
+  fill: #000;
+  transition: fill 0.1s linear;
 }
 
 .like-icon .main-body {
-    fill: transparent;
-    transition: fill 0.3s linear;
+  fill: transparent;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .core {
-    fill: transparent;
-    transition: fill 0.3s linear 0.03s;
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon .sparks {
-    fill: #f00;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
+  opacity: 0;
+  fill: #f00;
+  transition: opacity 0.3s ease-in;
 }
 
-/* Состояние hover – чёрное заполнение, чёрный контур */
+/* HOVER */
 .like-icon:hover .main-body {
-    fill: #000;
-    transition-delay: 0.05s;
+  fill: #000;
+  transition-delay: 0.05s;
 }
-.like-icon:hover .core {
-    fill: #000;
-    transition-delay: 0s;
-}
-/* Контур остаётся чёрным */
 
-/* Состояние active – красное заполнение, чёрный контур */
+.like-icon:hover .core {
+  fill: #000;
+  transition-delay: 0s;
+}
+
+/* ACTIVE */
 .like-icon:active .main-body,
 .like-icon:active .core {
-    fill: #f00;
-    transition-delay: 0s;
+  fill: #f00;
+  transition-delay: 0s;
 }
 
-/* Состояние is-liked – всё красное, искры, масштабирование */
+/* IS-LIKED */
 .like-icon.is-liked .contour {
-    fill: #f00;
-    transition: fill 0.3s linear 0.06s;
+  fill: #f00;
+  transition: fill 0.3s linear 0.06s;
 }
+
 .like-icon.is-liked .main-body {
-    fill: #f00;
-    transition: fill 0.3s linear 0.05s;
+  fill: #f00;
+  transition: fill 0.3s linear 0.05s;
 }
+
 .like-icon.is-liked .core {
-    fill: #f00;
-    transition: fill 0.3s linear;
+  fill: #f00;
+  transition: fill 0.3s linear;
 }
+
 .like-icon.is-liked .heart {
-    animation: heart-scale 0.3s ease-in 0.1s 1;
+  animation: heart-scale 0.3s ease-in 0.1s 1;
 }
+
 .like-icon.is-liked .sparks {
-    animation: sparks-appear 0.3s ease-in 0.3s 1;
+  animation: sparks-appear 0.3s ease-in 0.3s 1;
 }
 
 @keyframes heart-scale {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.25); }
-    100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes sparks-appear {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
