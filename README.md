@@ -24,4 +24,6 @@
 
 ## Ссылки
 
-Ссылка на проект: https://github.com/walking-in-the-woods/zakrivayuschiy-teg-f
+- Ссылка на опубликованный сайт: https://walking-in-the-woods.github.io/zakrivayuschiy-teg-f/
+
+- Ссылка на проект: https://github.com/walking-in-the-woods/zakrivayuschiy-teg-f
