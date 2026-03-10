@@ -229,10 +229,6 @@
   min-width: 130px;
 }
 
-.card__icon-button:focus-visible {
-  outline: 2px solid var(--main-color, #000);
-}
-
 /* IMAGE FILTERS */
 
 /* CARD 2 */
