@@ -12,10 +12,10 @@
 
 .page {
   padding: 100px 0;
-  color: var(--main-color);
-  font-family: var(--font-main);
-  font-weight: var(--font-weight-text);
-  background-color: var(--bg-color);
+  color: var(--main-color, #000);
+  font-family: var(--font-main, sans-serif);
+  font-weight: var(--font-weight-text, 410);
+  background-color: var(--bg-color, #fff);
   background-image:
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
@@ -191,7 +191,8 @@
   transform: scaleX(1);
 }
 
-.button__text {
+.button__text,
+.button svg {
   position: relative;
   z-index: 1;
   color: var(--bg-color, #fff);
@@ -211,7 +212,9 @@
   display: flex;
   border: none;
   padding: 0;
+  outline: 2px solid transparent;
   background: transparent;
+  transition: outline-color 0.3s ease-out;
   cursor: pointer;
 }
 
@@ -221,7 +224,6 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--main-color, #000);
   outline: 2px solid var(--main-color, #000);
 }
 
